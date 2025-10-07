@@ -16,7 +16,8 @@ app.get('/api/sensor', (req, res) => {
 // POST endpoint for Pico W
 app.post('/api/data', (req, res) => {
   const { temperature, humidity } = req.body;
-  console.log('Data:', temperature, humidity);
+  console.log('Temperature:', temperature);
+  console.log('Humidity:', humidity);
   // to save data
   res.json({ status: 'OK' });
 });
